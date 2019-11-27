@@ -1,0 +1,27 @@
+{
+  "name": "matse",
+  "version": "1.0.0",
+  "description": "Azure Functions sample for the Serverless framework",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "start": "func host start",
+    "build": "serverless package"
+  },
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "dependencies": {
+    "@hapi/boom": "^8.0.1",
+    "http-status": "^1.4.0",
+    "mongoose": "^5.7.7",
+    "structure": "^1.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "serverless-azure-functions": "^1.0.0",
+    "serverless-cli": "^1.0.0"
+  }
+}
