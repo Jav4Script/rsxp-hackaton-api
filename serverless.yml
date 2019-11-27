@@ -103,6 +103,34 @@ functions:
           methods:
             - POST
           authLevel: anonymous
+
+  talksList:
+    handler: src/interfaces/http/talks/index.list
+    events:
+      - http: true
+        x-azure-settings:
+          route: 'talks'
+          methods:
+            - GET
+          authLevel: anonymous
+  talksGetById:
+    handler: src/interfaces/http/talks/index.getById
+    events:
+      - http: true
+        x-azure-settings:
+          route: 'talks/{id}'
+          methods:
+            - GET
+          authLevel: anonymous
+  talksCreate:
+    handler: src/interfaces/http/talks/index.create
+    events:
+      - http: true
+        x-azure-settings:
+          route: 'talks'
+          methods:
+            - POST
+          authLevel: anonymous
   # can also be `function` or `admin`
   # The following are a few examples of other events you can configure:
   # storageBlob:

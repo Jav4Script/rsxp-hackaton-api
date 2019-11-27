@@ -1,0 +1,22 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "occupations",
+      "authLevel": "anonymous",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "entryPoint": "list",
+  "scriptFile": "../src/interfaces/http/occupations/index.js"
+}

@@ -1,0 +1,22 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "talks/{id}",
+      "authLevel": "anonymous",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "entryPoint": "getById",
+  "scriptFile": "../src/interfaces/http/talks/index.js"
+}
